@@ -1,0 +1,20 @@
+{
+	"extends": [ "@wordpress/stylelint-config/scss" ],
+	"ignoreFiles": [ "sass/_normalize.scss" ],
+	"overrides": [
+		{
+			"files": [ "*.scss" ],
+			"rules": {
+			}
+		}
+	],
+	"rules": {
+		"font-family-no-missing-generic-family-keyword": null,
+		"no-descending-specificity": null,
+		"no-empty-source": null,
+		"no-duplicate-selectors": null,
+		"font-family-no-duplicate-names": null,
+		"selector-class-pattern": null,
+		"unit-allowed-list": ["em", "rem", "s", "%"]
+	}
+}

@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Environment variables
+.env
+.env.local
+
+# Build & System Files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE Settings (Optional but recommended)
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Sass/CSS Cache
+.sass-cache/
+*.css.map
+
+# Archives
+*.zip
+*.tar.gz
+
+# WordPress Specific (Just in case)
+wp-config.php

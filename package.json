@@ -1,0 +1,30 @@
+{
+	"name": "triboon-theme-boilerplate",
+	"version": "1.0.0",
+	"description": "Modern WordPress Theme Boilerplate",
+	"author": "saeid6780",
+	"license": "GPL-2.0-or-later",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/saeid6780/triboon-theme"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.0.0",
+		"browser-sync": "^2.29.0",
+		"dir-archiver": "^2.0.0",
+		"husky": "^8.0.0",
+		"sass": "^1.69.0"
+	},
+	"scripts": {
+		"start": "npm run watch & npm run serve",
+		"build": "npm run compile:css",
+		"watch": "sass assets/styles/main.scss style.css --watch --style expanded --source-map",
+		"serve": "browser-sync start --proxy \"http://localhost/your-site\" --files \"*.css\" \"*.js\" \"*.php\" \"inc/**/*.php\" \"template-parts/**/*.php\" --no-notify --no-open",
+		"compile:css": "sass assets/styles/main.scss style.css --style expanded --no-source-map",
+		"lint:js": "wp-scripts lint-js 'assets/scripts/*.js'",
+		"format:js": "wp-scripts format",
+		"bundle": "dir-archiver --src . --dest ../theme-bundle.zip --exclude .git .github node_modules vendor .husky .vscode composer.json composer.lock package.json package-lock.json README.md .eslintrc .stylelintrc.json phpunit.xml.dist sass",
+		"prepare": "husky install"
+	},
+	"dependencies": {}
+}

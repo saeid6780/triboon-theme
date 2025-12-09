@@ -1,0 +1,15 @@
+/*
+Theme Name: Triboon Theme
+Theme URI: https://github.com/saeid6780/triboon-theme
+Author: Saeid6780
+Author URI: https://github.com/saeid6780
+Description: A modern WordPress theme boilerplate with Composer and NPM support.
+Version: 1.0
+Text Domain: triboon-theme
+ */
+*,
+*::before,
+*::after {
+	box-sizing: border-box; }
+
+/*# sourceMappingURL=style.css.map */
