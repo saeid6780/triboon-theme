@@ -19,7 +19,7 @@
 		"start": "npm run watch & npm run serve",
 		"build": "npm run compile:css",
 		"watch": "sass assets/styles/main.scss style.css --watch --style expanded --source-map",
-		"serve": "browser-sync start --proxy \"http://localhost/your-site\" --files \"*.css\" \"*.js\" \"*.php\" \"inc/**/*.php\" \"template-parts/**/*.php\" --no-notify --no-open",
+		"serve": "browser-sync start --proxy \"http://fahva.local\" --files \"*.css\" \"*.js\" \"*.php\" \"inc/**/*.php\" \"template-parts/**/*.php\" --no-notify --no-open",
 		"compile:css": "sass assets/styles/main.scss style.css --style expanded --no-source-map",
 		"lint:js": "wp-scripts lint-js 'assets/scripts/*.js'",
 		"format:js": "wp-scripts format",

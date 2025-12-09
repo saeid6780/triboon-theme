@@ -57,5 +57,4 @@ function triboon_theme_customize_partial_blogdescription() {
 function triboon_theme_customize_preview_js() {
 	wp_enqueue_script( 'triboon-theme-customizer', get_template_directory_uri() . '/scripts/customizer.js', array( 'customize-preview' ), THEME_VERSION, true );
 }
-
 add_action( 'customize_preview_init', 'triboon_theme_customize_preview_js' );
